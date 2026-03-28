@@ -1,5 +1,7 @@
 'use client'
 
+import Link from "next/link"
+
 type ProductType = {
   id: number
   title: string
@@ -16,10 +18,11 @@ type ProductType = {
 type Props = {
   products: ProductType[];
   greetings: string;
-  handleNavigate: (name: string) => void;
 }
 
-const Products = ({ products, greetings, handleNavigate }: Props) => {
+
+
+const Products = ({ products, greetings }: Props) => {
   return (
     <section className="bg-slate-50 py-12">
       <div className="mx-auto max-w-6xl px-4">
@@ -46,7 +49,9 @@ const Products = ({ products, greetings, handleNavigate }: Props) => {
               {/* Image placeholder – swap for an <Image> later if you want */}
               {/* <div className="aspect-[4/3] w-full bg-slate-100" /> */}
 
+             <Link href={'/products/' + product.id} className="block">
               <img src={product.image} alt={product.title} className="aspect-[4/3] w-full object-cover" />
+             </Link>
 
               <div className="flex flex-1 flex-col p-5">
                 <h3 className="line-clamp-1 text-lg font-semibold text-slate-900 group-hover:text-sky-600">

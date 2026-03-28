@@ -9,10 +9,6 @@ const page = async() => {
  // in a server component u cant use usestate effect event handlers
 
 
-    function handleNavigate(name: string) {
-        console.log('he;;;po');
-        
-    }
 
 
     return(
@@ -35,7 +31,6 @@ const page = async() => {
             {/* but it is not possible to do the vise versa */}
             <Products
              products={products} 
-                handleNavigate={handleNavigate}
              greetings="Hello, welcome to our products page!"
               />
         </div>
