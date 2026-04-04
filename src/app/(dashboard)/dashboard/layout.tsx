@@ -17,6 +17,11 @@ const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
                 Home
               </Link>
             </li>
+             <li>
+              <Link href="/dashboard/blogs" className="flex items-center px-3 py-2 rounded-md text-gray-700 hover:bg-indigo-50 hover:text-indigo-600">
+                Blog
+              </Link>
+            </li>
             <li>
               <Link href="/dashboard/profile" className="flex items-center px-3 py-2 rounded-md text-gray-700 hover:bg-indigo-50 hover:text-indigo-600">
                 Profile
