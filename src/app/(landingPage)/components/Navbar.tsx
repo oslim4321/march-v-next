@@ -11,6 +11,7 @@ const Navbar = () => {
                         <li><Link href="/" className="text-gray-700 hover:text-indigo-600 transition-colors">Home</Link></li>
                         <li><Link href="/about" className="text-gray-700 hover:text-indigo-600 transition-colors">About</Link></li>
                         <li><Link href="/contact" className="text-gray-700 hover:text-indigo-600 transition-colors">Contact</Link></li>
+                        <li><Link href="/blogs" className="text-gray-700 hover:text-indigo-600 transition-colors">Blogs</Link></li>
                     </ul>
 
                     <div className="md:hidden">

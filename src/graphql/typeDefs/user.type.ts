@@ -1,0 +1,24 @@
+import gql from "graphql-tag";
+
+export const userType = gql`
+
+    type User {
+      id: ID,
+      name: String,
+      email: String
+      createdAt: String
+      updatedAt: String
+    }
+
+ extend type Query {
+    users: [User]
+    user(id: ID!): User
+  }
+
+  extend type Mutation {
+    createUser(name: String!, email: String!): User
+    updateUser(id: ID!, name: String, email: String): User
+    deleteUser(id: ID!): User
+  }
+
+`
